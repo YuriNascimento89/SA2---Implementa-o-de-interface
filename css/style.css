@@ -6,21 +6,28 @@
 }
 header {
     background-color: #1E9BC2;
-    height: 100%;
-
+    height: 80px;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
 .logo{
     width: 100px;
+    justify-content: flex-start;
 }
 
-.container-grid{
+.container-grid , .posicionamento-header{
     width: 1200px;
-    height: 80px;
+    height: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+
 }
 
 .menu a{
@@ -38,20 +45,25 @@ header {
 }
 
 .banner{
-    height: 440px;
+    height: 400px;
     background-image: url(../img/Banner\ Desktop.png);
     background-repeat: none;
     background-size: cover;
+    margin: 0 !important;
 
 }
 
-
-.texto-banner{
-    font-size: 80px;
-    font-weight: bold;
-    color: red;
+.button {
+    background-color: yellow;
+    border: none;
+    color:black;
+    padding: 1px 30px;
     text-align: center;
-}
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  }
 .secao-jogos{
     background-color: white;
 }
@@ -63,7 +75,7 @@ header {
 }
 
 .jogos img{
-    width: 300px;
+    width: 250px;
 }
 
 .texto-sobre{
@@ -72,8 +84,34 @@ header {
     flex-direction: column;
     justify-content: center;
 }
+.secao-partidas{
+    background-color: #1E9BC2;
+  text-align: center;
+}
+.texto-partidas h2 {
+    text-align: center;
+}
+
+.partidas{
+display: flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+flex-wrap: wrap;
+ margin: 0 !important;
+}
+
+.rodape{
+background-color: grey;
+padding: 49px;
+text-align: center;
+font-weight: bold;
+font-size: small;
+
+}
 .posicionamento-header{
     position: relative;
+
 }
 .barras{
     display: none;
@@ -83,13 +121,17 @@ header {
     .container-grid{
         width: 90%;
     }
+    .menu{
+        width: 460px;
+    }
     .menu a{
         font-size: 16px;
+
     }
 
 
     .logo{
-        width: 200px;
+        width: 100px;
     }
 }
 @media screen  and (max-width:768px){
@@ -102,9 +144,21 @@ header {
     .menu{
         display: none;
         flex-direction: column;
-        width: 250px;
-        height:250px ;
-        position:absolute
+        width: 200px;
+        position:absolute;
+        top: 0;
+        right: 65px;
+        background-color:#1E9BC2 ;
         
+    }
+    .menu a{
+        text-align: center;
+        padding: 15px;
+    }
+    .posicionamento-header{
+        position:relative;
+    }
+    .logo{
+        width: 50px;
     }
 }
