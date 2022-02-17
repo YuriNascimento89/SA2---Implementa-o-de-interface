@@ -44,6 +44,10 @@ body{
     justify-content: space-between;
 }
 
+.secao-jogos{
+    background-color: white;
+}
+
 .banner{
     height: 400px;
     background-image: url(../img/Banner\ Desktop.png);
@@ -52,13 +56,25 @@ body{
     margin: 0 !important;
 
 }
-#carrosel img{
-    display:none;
+.carrosel{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 1348px;
+    height: 220px;
+    margin: auto;
 }
 
-.banner-ativo{
-    display: flex;
+.cx-carrosel > img{
+    height: 200px;
+    width: 230px;
+    margin: 10px 10px 10px 10px;
+ 
 }
+
 
 .button {
     background-color: yellow;
@@ -71,9 +87,7 @@ body{
     font-size: 16px;
     font-weight: bold;
   }
-.secao-jogos{
-    background-color: white;
-}
+
 
 .jogos{
     display: flex;
